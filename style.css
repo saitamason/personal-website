@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 1.8rem;
+
+  font-family: monospace;
+  font-size: 1.8rem;
+}
+
+p,
+li,
+nav {
+  line-height: 1.618;
+}
+
+nav {
+  margin: 2.4rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a:last-child {
+  text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #000;
+    color: #fff;
+  }
+
+  a:link {
+    color: #b7cfff;
+  }
+
+  a:visited {
+    color: #e8b7ff;
+  }
+}
+
+@media (max-width: 44.75em) {
+  nav {
+    display: block;
+  }
+
+  nav a:last-child {
+    text-align: left;
+  }
+
+  nav a {
+    display: block;
+  }
+}
