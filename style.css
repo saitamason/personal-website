@@ -1,7 +1,4 @@
 :root {
-  --font-size: 1.8rem;
-  --half-font-size: 0.9rem;
-  --third-font-size: 0.6rem;
   --color-border: #000;
 }
 
@@ -12,10 +9,10 @@ html {
 body {
   max-width: 80rem;
   margin: 0 auto;
-  padding: 0 var(--font-size);
+  padding: 0 1em;
 
   font-family: monospace;
-  font-size: var(--font-size);
+  font-size: 1.8rem;
 }
 
 p,
@@ -25,14 +22,14 @@ nav {
 }
 
 li {
-  margin-bottom: var(--half-font-size);
+  margin-bottom: 0.5em;
 }
 
 nav {
-  margin: var(--font-size) 0;
+  margin: 1em 0;
   display: flex;
   justify-content: space-between;
-  gap: var(--font-size);
+  gap: 1em;
 }
 
 nav a:last-child {
@@ -75,10 +72,10 @@ nav a:last-child {
 
   nav a {
     display: inline-block;
-    margin-bottom: var(--half-font-size);
+    margin-bottom: 0.5em;
     border: 1px solid var(--color-border);
     text-decoration: none;
-    padding: var(--third-font-size) var(--half-font-size);
+    padding: 0.3em 0.5em;
   }
 
   nav a:last-child {
@@ -86,6 +83,6 @@ nav a:last-child {
   }
 
   ul {
-    padding-left: var(--font-size);
+    padding-left: 1em;
   }
 }
