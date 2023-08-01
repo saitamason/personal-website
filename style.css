@@ -1,5 +1,8 @@
 :root {
   --font-size: 1.8rem;
+  --half-font-size: 0.9rem;
+  --third-font-size: 0.6rem;
+  --color-border: #000;
 }
 
 html {
@@ -22,7 +25,7 @@ nav {
 }
 
 li {
-  margin-bottom: calc(var(--font-size) / 2);
+  margin-bottom: var(--half-font-size);
 }
 
 nav {
@@ -37,6 +40,10 @@ nav a:last-child {
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --color-border: #fff;
+  }
+
   html {
     background: #000;
     color: #fff;
@@ -66,13 +73,16 @@ nav a:last-child {
     display: block;
   }
 
-  nav a:last-child {
-    text-align: left;
+  nav a {
+    display: inline-block;
+    margin-bottom: var(--half-font-size);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    padding: var(--third-font-size) var(--half-font-size);
   }
 
-  nav a {
-    display: block;
-    margin-bottom: calc(var(--font-size) / 2);
+  nav a:last-child {
+    float: right;
   }
 
   ul {
