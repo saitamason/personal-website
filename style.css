@@ -27,12 +27,15 @@ li {
 
 nav {
   margin: 1em 0;
+}
+
+.prev-next {
   display: flex;
   justify-content: space-between;
   gap: 1em;
 }
 
-nav a:last-child {
+.prev-next a:last-child {
   text-align: right;
 }
 
@@ -66,11 +69,11 @@ nav a:last-child {
     font-size: 50%;
   }
 
-  nav {
+  .prev-next {
     display: block;
   }
 
-  nav a {
+  .prev-next a {
     display: inline-block;
     margin-bottom: 0.5em;
     border: 1px solid var(--color-border);
@@ -78,7 +81,7 @@ nav a:last-child {
     padding: 0.3em 0.5em;
   }
 
-  nav a:last-child {
+  .prev-next a:last-child {
     float: right;
   }
 
